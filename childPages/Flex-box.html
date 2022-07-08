@@ -23,26 +23,65 @@
 
     <title>Flex-box Page</title>
 
+    <style>
+        div {border: thin line black;}
+        * {box-sizing: border-box;}
+        .header {
+            //border: 1px solid red;
+            padding: 15 px;
+        }
+        .menu {
+            width: 25%;
+            float: left;
+            padding: 15px;
+            border: 1px solid red;
+        }
+        .main {
+            float: left;
+            width:50%;
+            padding: 15px;
+            border: 1px solid red;
+        }
+        .aside {
+            float: left;
+            width: 25%;
+            padding: 15 px;
+            border: 1px solid red;
+        }
+        .footer {
+            padding: 15px;
+            border: 1px solid red;
+        }
+    </style>
+
     <!--Warning about Javascript, Cybersecurity Topic-->
     <noscript>Running JavaScript is not necessary in the HTML Page ... FYI: your feature to execute scripts is turned off</noscript>
 
 </head>
 
 <body>
-    <header>This is the Flex-box</header>
-    <nav>Navigation</nav>
-    <aside>This is the aside space.</aside>
-    <section><article>This is a section and article.</article></section>
-    <section><article><p>This is a paragraphy tage inside a section-article.</p></article></section> 
+    <div class="header"><header>3-Column Flexbox</header></div>
+    <div class="menu"><nav>Navigation</nav></div>
+    <div class="main">
+        <section><article>This is a secton and article.</article></section>
+        <section><article><p>This is a paragraph tag inside a section-article</p></article></section>
+    </div>
+    <div class="aside">
+        <aside><br><br><br><br><br><br>
+            This is the aside space.
+        </aside>
+    </div>
 </body>
 
 <footer>
+    <div class="footer">
     <blockquote cite="https://parade.com/1071386/kelseypelzer/william-shakespeare-quotes/">
         <!-- Date Accessed 20220706 -->
     </blockquote>
     <strong>"To be or not to be." - </strong> 
     <em><a href="https://parade.com/1071386/kelseypelzer/william-shakespeare-quotes/" target="_blank">William Shakespeare</a></em>
     <p>&copy Faith Ly, powered by faith-ly6 in Github</p>
+    </div>
 </footer>
 
 </html>
